@@ -1,0 +1,66 @@
+.shop{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+}
+.guitar{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+.guitar .heading{
+    text-align: left;
+}
+.guitar .description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.guitar .price{
+    color: var(--primary);
+    font-size: 3.4rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1rem;
+}
+.guitar p{
+    margin-bottom: 0.8rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form select{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    padding: 6px;
+}
+.form input[type="submit"]{
+    background-color: var(--black);
+    border: none;
+    font-weight: bold;
+    color: var(--white);
+    padding: 8px;
+    border-radius: 4px;
+}
+.form input[type="submit"]:hover{
+    background-color: var(--primary);
+}
+
+
+@media(min-width: 768px){
+    .shop{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 992px){
+    .shop{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

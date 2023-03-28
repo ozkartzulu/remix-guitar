@@ -1,0 +1,11 @@
+.about{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .about{
+        grid-template-columns: 2fr 2fr;
+    }
+}

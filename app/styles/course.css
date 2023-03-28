@@ -1,0 +1,15 @@
+.course{
+    padding: 3rem 0.8rem;
+}
+.course .text{
+    color: var(--white);
+}
+@media (min-width: 768px){
+    .course .course-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course .course-grid .contain{
+        grid-column: 2 / 3;
+    }
+}
